@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLAYER</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app" id="root">
+      <div class="player">
+        <header class="header">
+          <nav class="header__nav">
+            <button id="play" class="header__nav-button play">play</button>
+            <button id="pause" class="header__nav-button pause">pause</button>
+            <button id="stop" class="header__nav-button stop">stop</button>
+            <button id="previos" class="header__nav-button previos"><<</button>
+            <button id="next" class="header__nav-button next">>></button>
+          </nav>
+          <div class="currentTrack">
+            <div class="currentTrackBody">
+              <div class="info">
+                <div class="currentAftor">No audios</div>
+                <span class="time">00:00</span>
+                <div class="progressBody">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__ava"></div>
+        </header>
+        <main class="play-list">
+          <div class="play-list__link"></div>
+          <nav class="play-list__nav">
+            <p>menu</p>
+          </nav>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
